@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Automóviles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Reserva de Automóviles</h1>
+    </header>
+    <main>
+        <section id="auth-section">
+            <h2>Iniciar Sesión / Registrarse</h2>
+            <form id="auth-form">
+                <input type="text" id="username" placeholder="Nombre de usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="reserve-section" style="display:none;">
+            <h2>Reservar Automóvil</h2>
+            <div id="search-bar">
+                <input type="text" id="search-query" placeholder="Buscar...">
+                <button id="search-button">Buscar</button>
+            </div>
+            <div id="car-list"></div>
+        </section>
+
+        <section id="report-section" style="display:none;">
+            <h2>Reporte de Reservas</h2>
+            <div id="report-content"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
